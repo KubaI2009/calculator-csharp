@@ -127,6 +127,7 @@ namespace CalculatorCSharp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorForm));
             SuspendLayout();
 
             //window
@@ -135,6 +136,7 @@ namespace CalculatorCSharp
             ClientSize = new Size(FormWidth, FormHeight);
             Name = "wfRoot";
             Text = "Calculator";
+            Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
             BackColor = Color.DarkGray;
 
             //output label

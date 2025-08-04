@@ -14,6 +14,8 @@ namespace CalculatorCSharp
 
             GridHeight = 7;
             GridWidth = 4;
+            
+            FormBorderStyle = FormBorderStyle.FixedSingle;
 
             InitializeComponent();
         }

@@ -8,7 +8,7 @@ using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
-    public abstract class CalculatorButton : Button
+    public class CalculatorButton : Button
     {
         private CalculatorForm _master;
 

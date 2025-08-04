@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationIcon>resources\images\calculator_icon.ico</ApplicationIcon>
     </PropertyGroup>
 
 </Project>

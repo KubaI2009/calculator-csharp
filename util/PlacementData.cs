@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculatorCSharp.util
 {
-    public class PlacementData
+    public struct PlacementData
     {
         public Point Location
         {
