@@ -4,8 +4,8 @@ namespace CalculatorCSharp
     {
         public CalculatorForm()
         {
-            Width = 300;
-            Height = 350;
+            FormWidth = 300;
+            FormHeight = 350;
             PadX = 3;
             PadY = 3;
 

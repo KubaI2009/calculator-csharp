@@ -27,7 +27,8 @@ namespace CalculatorCSharp.util
             Text = text;
             Size = placementData.Size;
             Master = master;
-            TabIndex = 0;
+            FlatStyle = FlatStyle.Flat;
+            FlatAppearance.BorderSize = 0;
             UseVisualStyleBackColor = true;
             BackColor = Color.Gray;
         }

@@ -7,11 +7,11 @@ using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
-    public class DotButton : CalculatorButton
+    public class DecimalPlaceButton : CalculatorButton
     {
-        private static readonly char s_dotSymbol = '.';
+        private static readonly char s_dotSymbol = ',';
 
-        public DotButton(string name, byte x, byte y, CalculatorForm master) : base(name, s_dotSymbol.ToString(), x, y, master)
+        public DecimalPlaceButton(string name, byte x, byte y, CalculatorForm master) : base(name, s_dotSymbol.ToString(), x, y, master)
         {
             Click += DigitButton_OnClick;
         }

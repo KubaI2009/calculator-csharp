@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace CalculatorCSharp.util
 {
-    public class BackspaceButton : CalculatorButton
+    public class ClearButton : CalculatorButton
     {
-        public BackspaceButton(string name, byte x, byte y, CalculatorForm master) : base(name, "<-", x, y, master)
+        public ClearButton(string name, byte x, byte y, CalculatorForm master) : base(name, "C", x, y, master)
         {
             Click += BackspaceButton_OnClick;
         }
 
         private void BackspaceButton_OnClick(object? sender, EventArgs? e)
         {
-            Master.Input.Text = Master.Input.Text.Length > 0 ? Master.Input.Text.Substring(0, Master.Input.Text.Length - 1) : "";
+            Master.Input.Text = "";
         }
     }
 }
