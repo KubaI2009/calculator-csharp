@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CalculatorCSharp.util
 {
-    public class BackspaceButton
+    public class BackspaceButton : CalculatorButton
     {
+        public BackspaceButton(string name, byte x, byte y, CalculatorForm master) : base(name, "<-", x, y, master)
+        {
+            
+        }
     }
 }

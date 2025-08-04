@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalculatorTrue;
+using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
@@ -19,7 +19,7 @@ namespace CalculatorCSharp.util
             private set { _digit = value; }
         }
 
-        public DigitButton(string name, char digit, byte x, byte y, CalculatorWindow master) : base (name, digit.ToString(), x, y, master)
+        public DigitButton(string name, char digit, byte x, byte y, CalculatorForm master) : base (name, digit.ToString(), x, y, master)
         {
             Digit = digit;
             Click += Digit == s_zero ? ZeroButton_OnClick : DigitButton_OnClick;

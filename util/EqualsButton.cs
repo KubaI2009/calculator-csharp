@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalculatorTrue;
+using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
     public class EqualsButton : CalculatorButton
     {
-        public EqualsButton(string name, byte x, byte y, CalculatorWindow master) : base(name, "=", x, y, master)
+        public EqualsButton(string name, byte x, byte y, CalculatorForm master) : base(name, "=", x, y, master)
         {
             BackColor = Color.YellowGreen;
         }

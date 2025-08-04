@@ -1,8 +1,8 @@
 ﻿using CalculatorCSharp.util;
 
-namespace CalculatorTrue
+namespace CalculatorCSharp
 {
-    partial class CalculatorWindow
+    partial class CalculatorForm
     {
         private static char?[] s_digits = { null, '0', null, '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 

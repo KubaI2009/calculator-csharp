@@ -1,8 +1,8 @@
-namespace CalculatorTrue
+namespace CalculatorCSharp
 {
-    public partial class CalculatorWindow : Form
+    public partial class CalculatorForm : Form
     {
-        public CalculatorWindow()
+        public CalculatorForm()
         {
             Width = 300;
             Height = 350;

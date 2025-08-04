@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalculatorTrue;
+using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
@@ -11,7 +11,7 @@ namespace CalculatorCSharp.util
     {
         private static readonly char s_minusSymbol = '-';
 
-        public ChangeSignButton(string name, byte x, byte y, CalculatorWindow master) : base(name, "+/-", x, y, master)
+        public ChangeSignButton(string name, byte x, byte y, CalculatorForm master) : base(name, "+/-", x, y, master)
         {
             Click += ChangeSignButton_OnClick;
         }

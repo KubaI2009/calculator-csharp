@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalculatorTrue;
+using CalculatorCSharp;
+using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
     public abstract class CalculatorButton : Button
     {
-        private CalculatorWindow _master;
+        private CalculatorForm _master;
 
-        public CalculatorWindow Master
+        public CalculatorForm Master
         {
             get { return _master; }
             private set { _master = value; }
         }
         
-        protected CalculatorButton(string name, string text, byte x, byte y, CalculatorWindow master) : base()
+        protected CalculatorButton(string name, string text, byte x, byte y, CalculatorForm master) : base()
         {
             PlacementData placementData = master.PlacementDataForCell(x, y, 1, 1);
 

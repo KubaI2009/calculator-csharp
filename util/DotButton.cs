@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalculatorTrue;
+using CalculatorCSharp;
 
 namespace CalculatorCSharp.util
 {
@@ -11,7 +11,7 @@ namespace CalculatorCSharp.util
     {
         private static readonly char s_dotSymbol = '.';
 
-        public DotButton(string name, byte x, byte y, CalculatorWindow master) : base(name, s_dotSymbol.ToString(), x, y, master)
+        public DotButton(string name, byte x, byte y, CalculatorForm master) : base(name, s_dotSymbol.ToString(), x, y, master)
         {
             Click += DigitButton_OnClick;
         }
